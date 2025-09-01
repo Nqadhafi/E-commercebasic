@@ -7,7 +7,6 @@
       @php $img = $product->thumbnail ? asset('storage/'.$product->thumbnail) : 'https://via.placeholder.com/800x600?text=Product'; @endphp
       
       <div class="ratio ratio-4x3 product-hero" style="background-image:url('{{ $img }}')"></div>
-      @dd($product->thumbnail . 'tambah+' . $img)
     </div>
     <div class="col-md-7">
       <h3 class="mb-2">{{ $product->name }}</h3>
