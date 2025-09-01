@@ -1,0 +1,35 @@
+/* Product Detail Page Styling */
+.product-hero {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+/* Efek zoom saat hover */
+.product-hero:hover {
+  transform: scale(1.05);
+}
+
+/* Pastikan placeholder atau gambar tetap terlihat jelas */
+.product-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0) !important; /* Optional: tambahkan overlay tipis jika perlu */
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+/* Responsif: tambahkan padding atau margin jika diperlukan */
+@media (max-width: 768px) {
+  .product-hero {
+    margin-bottom: 1rem;
+  }
+}
