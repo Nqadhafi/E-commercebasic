@@ -6,7 +6,7 @@
     <div class="col-md-5">
       @php $img = $product->thumbnail ? asset('storage/'.$product->thumbnail) : 'https://via.placeholder.com/800x600?text=Product'; @endphp
       
-      <div class="ratio ratio-4x3 product-hero" style="background-image:url('{{ $img }}')"></div>
+      <div class="ratio ratio-4x3 product-thumb" style="background-image:url('{{ $img }}')"></div>
     </div>
     <div class="col-md-7">
       <h3 class="mb-2">{{ $product->name }}</h3>
