@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-5">
-      @php $img = $product->thumbnail ? asset($product->thumbnail) : 'https://via.placeholder.com/800x600?text=Product'; @endphp
+      @php $img = $product->thumbnail ? asset('public/'.$product->thumbnail) : 'https://via.placeholder.com/800x600?text=Product'; @endphp
       <div class="ratio ratio-4x3 product-hero" style="background-image:url('{{ $img }}')"></div>
     </div>
     <div class="col-md-7">
